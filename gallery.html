@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html class="light" lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Gallery | Gillitts Bowls Club</title>
+    <!-- Material Symbols -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&amp;family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&amp;display=swap" rel="stylesheet"/>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script id="tailwind-config">
+          tailwind.config = {
+            darkMode: "class",
+            theme: {
+              extend: {
+                "colors": {
+                        "on-tertiary": "#d4f9ff",
+                        "surface-container": "#e2ebda",
+                        "surface-container-highest": "#d6e0cd",
+                        "on-secondary-fixed-variant": "#246830",
+                        "surface-container-lowest": "#ffffff",
+                        "outline-variant": "#a8afa2",
+                        "on-tertiary-fixed": "#003d43",
+                        "tertiary": "#00656f",
+                        "tertiary-fixed-dim": "#00dbee",
+                        "surface-container-high": "#dce6d4",
+                        "on-tertiary-fixed-variant": "#005c64",
+                        "on-primary": "#d1ffc8",
+                        "primary-fixed-dim": "#90e28a",
+                        "secondary-fixed-dim": "#9ee59f",
+                        "on-primary-container": "#005c15",
+                        "on-surface": "#2a3127",
+                        "error": "#b02500",
+                        "primary-container": "#9df197",
+                        "surface-bright": "#f2f9ea",
+                        "background": "#f2f9ea",
+                        "on-background": "#2a3127",
+                        "inverse-primary": "#9df197",
+                        "on-primary-fixed-variant": "#12661e",
+                        "on-error-container": "#520c00",
+                        "outline": "#72796d",
+                        "surface-container-low": "#ebf3e3",
+                        "on-secondary-fixed": "#004a18",
+                        "surface-variant": "#d6e0cd",
+                        "primary-dim": "#025d16",
+                        "secondary-container": "#abf4ac",
+                        "on-primary-fixed": "#00460e",
+                        "secondary-dim": "#165c25",
+                        "inverse-on-surface": "#989f92",
+                        "tertiary-fixed": "#10eafe",
+                        "on-secondary": "#cfffcc",
+                        "inverse-surface": "#0a1008",
+                        "primary-fixed": "#9df197",
+                        "primary": "#176a21",
+                        "surface-tint": "#176a21",
+                        "on-error": "#ffefec",
+                        "error-container": "#f95630",
+                        "secondary-fixed": "#abf4ac",
+                        "error-dim": "#b92902",
+                        "surface-dim": "#ccd8c4",
+                        "tertiary-dim": "#005861",
+                        "on-secondary-container": "#185e27",
+                        "secondary": "#246830",
+                        "on-surface-variant": "#575e52",
+                        "tertiary-container": "#10eafe",
+                        "on-tertiary-container": "#005159",
+                        "surface": "#f2f9ea"
+                },
+                "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                },
+                "fontFamily": {
+                        "headline": ["Lexend"],
+                        "body": ["Plus Jakarta Sans"],
+                        "label": ["Lexend"]
+                }
+              },
+            },
+          }
+        </script>
+    <style>
+            .material-symbols-outlined {
+                font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            }
+            .masonry-grid {
+                column-count: 1;
+                column-gap: 1.5rem;
+            }
+            @media (min-width: 768px) { .masonry-grid { column-count: 2; } }
+            @media (min-width: 1024px) { .masonry-grid { column-count: 3; } }
+            .masonry-item {
+                break-inside: avoid;
+                margin-bottom: 1.5rem;
+            }
+        </style>
+</head>
+<body class="bg-background font-body text-on-background">
+    <!-- TopNavBar -->
+    <nav class="bg-surface/70 dark:bg-surface-dark/70 backdrop-blur-xl docked full-width top-0 sticky no-border bg-surface-container-low/50 shadow-sm shadow-green-900/5 z-50">
+        <div class="flex justify-between items-center max-w-7xl mx-auto px-6 h-20 w-full">
+            <div class="font-lexend font-black text-green-900 dark:text-green-50 tracking-tighter text-2xl">
+                Gillitts Bowls Club
+            </div>
+            <div class="hidden md:flex gap-8 items-center">
+                <a class="font-lexend font-bold tracking-tight text-on-surface-variant hover:text-primary transition-colors hover:scale-105 hover:bg-surface-container-high px-3 py-1 rounded-lg" href="index.html">Home</a>
+                <a class="font-lexend font-bold tracking-tight text-green-700 dark:text-green-400 border-b-2 border-green-700 dark:border-green-400 pb-1" href="gallery.html">Gallery</a>
+                <a class="font-lexend font-bold tracking-tight text-on-surface-variant hover:text-primary transition-colors hover:scale-105 hover:bg-surface-container-high px-3 py-1 rounded-lg" href="news.html">News</a>
+                <a class="font-lexend font-bold tracking-tight text-on-surface-variant hover:text-primary transition-colors hover:scale-105 hover:bg-surface-container-high px-3 py-1 rounded-lg" href="contact.html">Contact</a>
+            </div>
+            <div class="flex gap-4">
+                <button class="bg-primary text-on-primary font-lexend font-bold px-6 py-2 rounded-xl hover:scale-105 active:scale-95 transition-all duration-300" onclick="location.href='contact.html'">Join Us</button>
+            </div>
+        </div>
+    </nav>
+    <main class="relative">
+        <!-- Hero Section -->
+        <section class="relative pt-20 pb-12 px-6 max-w-7xl mx-auto">
+            <div class="absolute -top-24 -right-24 w-96 h-96 bg-primary/5 rounded-full blur-3xl -z-10"></div>
+            <div class="absolute top-1/2 -left-24 w-64 h-64 bg-tertiary/10 rounded-full blur-3xl -z-10"></div>
+            <div class="flex flex-col items-start gap-4">
+                <span class="font-label text-primary font-bold tracking-[0.2em] uppercase">Visual Chronicle</span>
+                <h1 class="font-headline text-5xl md:text-7xl font-bold text-on-surface tracking-tight max-w-2xl leading-[1.1]">
+                    Life at the <span class="text-primary italic">Club.</span>
+                </h1>
+                <p class="text-on-surface-variant text-lg md:text-xl max-w-xl font-body leading-relaxed mt-4">
+                    Capturing the energy, precision, and camaraderie of Gillitts Bowls—where the Winston Park mist meets the competitive edge of B20 Cricket Bowls.
+                </p>
+            </div>
+        </section>
+        <!-- Filter Controls -->
+        <section class="sticky top-20 z-40 bg-background/80 backdrop-blur-md py-6 px-6">
+            <div class="max-w-7xl mx-auto flex flex-wrap gap-3">
+                <button class="bg-primary text-on-primary font-label font-bold px-6 py-2 rounded-full transition-all">All</button>
+                <button class="bg-surface-container-low text-on-surface-variant hover:bg-surface-container-high font-label font-bold px-6 py-2 rounded-full transition-all">Action Shots</button>
+                <button class="bg-surface-container-low text-on-surface-variant hover:bg-surface-container-high font-label font-bold px-6 py-2 rounded-full transition-all">Social</button>
+                <button class="bg-surface-container-low text-on-surface-variant hover:bg-surface-container-high font-label font-bold px-6 py-2 rounded-full transition-all">Events</button>
+            </div>
+        </section>
+        <!-- Gallery Grid -->
+        <section class="max-w-7xl mx-auto px-6 py-12">
+            <div class="masonry-grid">
+                <!-- Card 1 -->
+                <div class="masonry-item group relative overflow-hidden rounded-xl bg-surface-container-lowest hover:shadow-xl transition-all duration-500">
+                    <img alt="High-Stakes B20 Match" class="w-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Dynamic action shot of a lawn bowl rolling across a perfect green with focus on the technical grip of the player" src="./generated_images/B20 Action.png"/>
+                    <div class="absolute inset-0 bg-gradient-to-t from-primary/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex flex-col justify-end p-6">
+                        <span class="font-label text-on-primary/70 text-xs tracking-widest uppercase">Action Shots</span>
+                        <h3 class="font-headline text-on-primary text-xl font-bold">High-Stakes B20 Match</h3>
+                    </div>
+                </div>
+                <!-- Card 2 (Bento Large) -->
+                <div class="masonry-item group relative overflow-hidden rounded-xl bg-surface-container-lowest hover:shadow-xl transition-all duration-500">
+                    <img alt="Community Spirit" class="w-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Group of diverse people in stylish sporting attire laughing and talking on a wooden clubhouse terrace during sunset" src="./generated_images/Sunday Social.png"/>
+                    <div class="absolute inset-0 bg-gradient-to-t from-primary/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex flex-col justify-end p-6">
+                        <span class="font-label text-on-primary/70 text-xs tracking-widest uppercase">Social</span>
+                        <h3 class="font-headline text-on-primary text-xl font-bold">Community Spirit</h3>
+                    </div>
+                </div>
+                <!-- Card 3 -->
+                <div class="masonry-item group relative overflow-hidden rounded-xl bg-surface-container-lowest hover:shadow-xl transition-all duration-500">
+                    <img alt="A Warm Welcome" class="w-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="A warm inviting shot inside the kitchen with freshly baked scones and a steaming pot of tea" src="./generated_images/Tea_and_Scones.png"/>
+                    <div class="absolute inset-0 bg-gradient-to-t from-primary/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex flex-col justify-end p-6">
+                        <span class="font-label text-on-primary/70 text-xs tracking-widest uppercase">Social</span>
+                        <h3 class="font-headline text-on-primary text-xl font-bold">A Warm Welcome</h3>
+                    </div>
+                </div>
+                <!-- Card 4 -->
+                <div class="masonry-item group relative overflow-hidden rounded-xl bg-surface-container-lowest hover:shadow-xl transition-all duration-500">
+                    <img alt="Our Iconic Clubhouse" class="w-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Modern minimalist clubhouse interior with large glass windows overlooking a lush green bowling green under misty skies" src="./generated_images/Gillits_BC_frontview.png"/>
+                    <div class="absolute inset-0 bg-gradient-to-t from-primary/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex flex-col justify-end p-6">
+                        <span class="font-label text-on-primary/70 text-xs tracking-widest uppercase">Social</span>
+                        <h3 class="font-headline text-on-primary text-xl font-bold">Our Iconic Clubhouse</h3>
+                    </div>
+                </div>
+                <!-- Card 5 -->
+                <div class="masonry-item group relative overflow-hidden rounded-xl bg-surface-container-lowest hover:shadow-xl transition-all duration-500">
+                    <img alt="The B20 Championship Cup" class="w-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Silver trophy cup standing on a podium with a background of blurred green sporting fields and morning light" src="./generated_images/The Trophy.png"/>
+                    <div class="absolute inset-0 bg-gradient-to-t from-primary/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex flex-col justify-end p-6">
+                        <span class="font-label text-on-primary/70 text-xs tracking-widest uppercase">Events</span>
+                        <h3 class="font-headline text-on-primary text-xl font-bold">The B20 Championship Cup</h3>
+                    </div>
+                </div>
+                <!-- Card 6 -->
+                <div class="masonry-item group relative overflow-hidden rounded-xl bg-surface-container-lowest hover:shadow-xl transition-all duration-500">
+                    <img alt="Pioneers on the Green" class="w-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="A group of senior lawn bowls players, men and women, laughing together wearing white and green shirts" src="./generated_images/Club_Members_Portrait.png"/>
+                    <div class="absolute inset-0 bg-gradient-to-t from-primary/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex flex-col justify-end p-6">
+                        <span class="font-label text-on-primary/70 text-xs tracking-widest uppercase">Action Shots</span>
+                        <h3 class="font-headline text-on-primary text-xl font-bold">Pioneers on the Green</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Featured Section Asymmetric -->
+        <section class="max-w-7xl mx-auto px-6 py-24">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                <div class="lg:col-span-7 relative">
+                    <div class="absolute -top-10 -left-10 w-32 h-32 bg-primary-container rounded-full -z-10 opacity-50"></div>
+                    <img alt="Dawn over Winston Park" class="rounded-xl shadow-2xl transform lg:-rotate-2 hover:rotate-0 transition-transform duration-500" data-alt="A breathtaking cinematic wide shot of the Gillitts Bowling Club at dawn" src="./generated_images/Mist_Belt_Dawn.png"/>
+                </div>
+                <div class="lg:col-span-5 flex flex-col gap-6">
+                    <h2 class="font-headline text-4xl font-bold text-on-surface leading-tight">Beyond the Green.</h2>
+                    <p class="text-on-surface-variant leading-relaxed">
+                        Gillitts isn't just about the bowl—it's about the connection. Our community thrives on the social spirit that happens between matches, from morning coffee to celebratory sundowners.
+                    </p>
+                    <div class="flex gap-4">
+                        <div class="bg-tertiary-container p-4 rounded-xl flex-1">
+                            <span class="block font-headline text-3xl font-black text-on-tertiary-container">500+</span>
+                            <span class="font-label text-xs uppercase text-on-tertiary-container/80 font-bold">Active Members</span>
+                        </div>
+                        <div class="bg-secondary-container p-4 rounded-xl flex-1">
+                            <span class="block font-headline text-3xl font-black text-on-secondary-container">12</span>
+                            <span class="font-label text-xs uppercase text-on-secondary-container/80 font-bold">Annual Majors</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Footer -->
+    <footer class="bg-surface-container-low dark:bg-surface-container-dark-low w-full border-t border-outline-variant/15 py-12 px-8">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-7xl mx-auto font-plus-jakarta text-sm leading-relaxed text-green-900 dark:text-green-50">
+            <div class="flex flex-col gap-4">
+                <div class="font-lexend font-bold text-lg text-green-800">Gillitts Bowls Club</div>
+                <p class="text-on-surface-variant max-w-xs">Pioneering the future of social sports in the heart of Winston Park's mist-belt.</p>
+            </div>
+            <div class="flex flex-col gap-4">
+                <span class="font-lexend font-bold text-primary uppercase tracking-widest text-xs">Navigation</span>
+                <div class="flex flex-col gap-2">
+                    <a class="text-on-surface-variant hover:text-primary underline-offset-4 hover:underline transition-all opacity-80 hover:opacity-100" href="index.html">Home</a>
+                    <a class="text-primary font-semibold underline-offset-4 hover:underline transition-all" href="gallery.html">Gallery</a>
+                    <a class="text-on-surface-variant hover:text-primary underline-offset-4 hover:underline transition-all opacity-80 hover:opacity-100" href="news.html">News</a>
+                    <a class="text-on-surface-variant hover:text-primary underline-offset-4 hover:underline transition-all opacity-80 hover:opacity-100" href="contact.html">Contact</a>
+                </div>
+            </div>
+            <div class="flex flex-col gap-4">
+                <span class="font-lexend font-bold text-primary uppercase tracking-widest text-xs">Connect</span>
+                <div class="flex gap-4">
+                    <span class="material-symbols-outlined text-primary cursor-pointer hover:scale-110 transition-transform">share</span>
+                    <span class="material-symbols-outlined text-primary cursor-pointer hover:scale-110 transition-transform">mail</span>
+                    <span class="material-symbols-outlined text-primary cursor-pointer hover:scale-110 transition-transform">location_on</span>
+                </div>
+                <div class="mt-4 pt-4 border-t border-outline-variant/15">
+                    <p class="text-on-surface-variant/70 text-xs">© 2024 Gillitts Bowls Club. Winston Park, KwaZulu-Natal.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

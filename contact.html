@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html class="light" lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Contact Us | Gillitts Bowls Club</title>
+    <!-- Material Symbols -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&amp;family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&amp;display=swap" rel="stylesheet"/>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script id="tailwind-config">
+          tailwind.config = {
+            darkMode: "class",
+            theme: {
+              extend: {
+                "colors": {
+                        "on-tertiary": "#d4f9ff",
+                        "surface-container": "#e2ebda",
+                        "surface-container-highest": "#d6e0cd",
+                        "on-secondary-fixed-variant": "#246830",
+                        "surface-container-lowest": "#ffffff",
+                        "outline-variant": "#a8afa2",
+                        "on-tertiary-fixed": "#003d43",
+                        "tertiary": "#00656f",
+                        "tertiary-fixed-dim": "#00dbee",
+                        "surface-container-high": "#dce6d4",
+                        "on-tertiary-fixed-variant": "#005c64",
+                        "on-primary": "#d1ffc8",
+                        "primary-fixed-dim": "#90e28a",
+                        "secondary-fixed-dim": "#9ee59f",
+                        "on-primary-container": "#005c15",
+                        "on-surface": "#2a3127",
+                        "error": "#b02500",
+                        "primary-container": "#9df197",
+                        "surface-bright": "#f2f9ea",
+                        "background": "#f2f9ea",
+                        "on-background": "#2a3127",
+                        "inverse-primary": "#9df197",
+                        "on-primary-fixed-variant": "#12661e",
+                        "on-error-container": "#520c00",
+                        "outline": "#72796d",
+                        "surface-container-low": "#ebf3e3",
+                        "on-secondary-fixed": "#004a18",
+                        "surface-variant": "#d6e0cd",
+                        "primary-dim": "#025d16",
+                        "secondary-container": "#abf4ac",
+                        "on-primary-fixed": "#00460e",
+                        "secondary-dim": "#165c25",
+                        "inverse-on-surface": "#989f92",
+                        "tertiary-fixed": "#10eafe",
+                        "on-secondary": "#cfffcc",
+                        "inverse-surface": "#0a1008",
+                        "primary-fixed": "#9df197",
+                        "primary": "#176a21",
+                        "surface-tint": "#176a21",
+                        "on-error": "#ffefec",
+                        "error-container": "#f95630",
+                        "secondary-fixed": "#abf4ac",
+                        "error-dim": "#b92902",
+                        "surface-dim": "#ccd8c4",
+                        "tertiary-dim": "#005861",
+                        "on-secondary-container": "#185e27",
+                        "secondary": "#246830",
+                        "on-surface-variant": "#575e52",
+                        "tertiary-container": "#10eafe",
+                        "on-tertiary-container": "#005159",
+                        "surface": "#f2f9ea"
+                },
+                "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                },
+                "fontFamily": {
+                        "headline": ["Lexend"],
+                        "body": ["Plus Jakarta Sans"],
+                        "label": ["Lexend"]
+                }
+              },
+            },
+          }
+        </script>
+    <style>
+            .material-symbols-outlined {
+                font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            }
+            .glass-panel {
+                background: rgba(255, 255, 255, 0.4);
+                backdrop-filter: blur(12px);
+                border: 1px solid rgba(255, 255, 255, 0.5);
+            }
+        </style>
+</head>
+<body class="bg-background font-body text-on-background">
+    <!-- TopNavBar -->
+    <nav class="bg-surface/70 dark:bg-surface-dark/70 backdrop-blur-xl docked full-width top-0 sticky no-border bg-surface-container-low/50 shadow-sm shadow-green-900/5 z-50">
+        <div class="flex justify-between items-center max-w-7xl mx-auto px-6 h-20 w-full">
+            <div class="font-lexend font-black text-green-900 dark:text-green-50 tracking-tighter text-2xl">
+                Gillitts Bowls Club
+            </div>
+            <div class="hidden md:flex gap-8 items-center">
+                <a class="font-lexend font-bold tracking-tight text-on-surface-variant hover:text-primary transition-colors hover:scale-105 hover:bg-surface-container-high px-3 py-1 rounded-lg" href="index.html">Home</a>
+                <a class="font-lexend font-bold tracking-tight text-on-surface-variant hover:text-primary transition-colors hover:scale-105 hover:bg-surface-container-high px-3 py-1 rounded-lg" href="gallery.html">Gallery</a>
+                <a class="font-lexend font-bold tracking-tight text-on-surface-variant hover:text-primary transition-colors hover:scale-105 hover:bg-surface-container-high px-3 py-1 rounded-lg" href="news.html">News</a>
+                <a class="font-lexend font-bold tracking-tight text-green-700 dark:text-green-400 border-b-2 border-green-700 dark:border-green-400 pb-1" href="contact.html">Contact</a>
+            </div>
+            <div class="flex gap-4">
+                <button class="bg-primary text-on-primary font-lexend font-bold px-6 py-2 rounded-xl hover:scale-105 active:scale-95 transition-all duration-300" onclick="location.href='contact.html'">Join Us</button>
+            </div>
+        </div>
+    </nav>
+    <main class="relative">
+        <!-- Background Elements -->
+        <div class="absolute top-0 right-0 w-1/3 h-[800px] bg-primary/5 blur-[120px] -z-10 rounded-full"></div>
+        <div class="absolute bottom-0 left-0 w-1/4 h-[600px] bg-tertiary/10 blur-[100px] -z-10 rounded-full"></div>
+        <div class="max-w-7xl mx-auto px-6 py-24">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-16 items-start">
+                <!-- Left: Contact Form -->
+                <div class="lg:col-span-7">
+                    <div class="flex flex-col gap-4 mb-12">
+                        <span class="font-label text-primary font-bold tracking-[0.2em] uppercase">Get in Touch</span>
+                        <h1 class="font-headline text-5xl md:text-7xl font-bold text-on-surface tracking-tight">
+                            Start your <span class="text-primary italic">Journey.</span>
+                        </h1>
+                        <p class="text-on-surface-variant text-lg">Whether you're a seasoned pro or a first-timer, we'd love to hear from you. Drop us a line or swing by the green.</p>
+                    </div>
+                    <form class="flex flex-col gap-8">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div class="flex flex-col gap-2">
+                                <label class="font-label text-sm font-bold text-on-surface" for="name">Full Name</label>
+                                <input class="bg-surface-container-lowest border-outline-variant/30 rounded-xl px-4 py-4 focus:ring-primary focus:border-primary transition-all" id="name" placeholder="John Doe" type="text"/>
+                            </div>
+                            <div class="flex flex-col gap-2">
+                                <label class="font-label text-sm font-bold text-on-surface" for="email">Email Address</label>
+                                <input class="bg-surface-container-lowest border-outline-variant/30 rounded-xl px-4 py-4 focus:ring-primary focus:border-primary transition-all" id="email" placeholder="john@example.com" type="email"/>
+                            </div>
+                        </div>
+                        <div class="flex flex-col gap-2">
+                            <label class="font-label text-sm font-bold text-on-surface" for="subject">Subject</label>
+                            <select class="bg-surface-container-lowest border-outline-variant/30 rounded-xl px-4 py-4 focus:ring-primary focus:border-primary transition-all" id="subject">
+                                <option>Membership Inquiry</option>
+                                <option>Venue Hire</option>
+                                <option>Junior Program</option>
+                                <option>General Information</option>
+                            </select>
+                        </div>
+                        <div class="flex flex-col gap-2">
+                            <label class="font-label text-sm font-bold text-on-surface" for="message">Message</label>
+                            <textarea class="bg-surface-container-lowest border-outline-variant/30 rounded-xl px-4 py-4 focus:ring-primary focus:border-primary transition-all min-h-[150px]" id="message" placeholder="How can we help?"></textarea>
+                        </div>
+                        <button class="bg-primary text-on-primary font-headline font-bold text-lg py-5 rounded-2xl hover:scale-[1.02] active:scale-[0.98] transition-all shadow-lg shadow-primary/20" type="submit">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+                <!-- Right: Contact Details & Info -->
+                <div class="lg:col-span-5 flex flex-col gap-8">
+                    <!-- Location Card -->
+                    <div class="bg-surface-container-lowest p-8 rounded-2xl shadow-sm border border-outline-variant/10">
+                        <div class="flex flex-col gap-6">
+                            <div class="flex items-start gap-4">
+                                <div class="bg-primary/10 p-3 rounded-xl">
+                                    <span class="material-symbols-outlined text-primary">location_on</span>
+                                </div>
+                                <div>
+                                    <h3 class="font-headline font-bold text-on-surface text-xl">The Green</h3>
+                                    <p class="text-on-surface-variant leading-relaxed mt-2">14 Vian Road, Winston Park,<br/>Gillitts, KwaZulu-Natal, 3610</p>
+                                    <a class="inline-block mt-4 text-primary font-bold text-sm border-b border-primary/30 hover:border-primary transition-all" href="https://maps.google.com/?q=14+Vian+Road,+Winston+Park">Open in Maps</a>
+                                </div>
+                            </div>
+                            <hr class="border-outline-variant/10"/>
+                            <div class="flex items-start gap-4">
+                                <div class="bg-tertiary/10 p-3 rounded-xl">
+                                    <span class="material-symbols-outlined text-tertiary">accessible</span>
+                                </div>
+                                <div>
+                                    <h3 class="font-headline font-bold text-on-surface text-xl">Accessibility</h3>
+                                    <p class="text-on-surface-variant leading-relaxed mt-2">Our greens and facilities are fully wheelchair accessible. Everyone is welcome.</p>
+                                </div>
+                            </div>
+                            <hr class="border-outline-variant/10"/>
+                            <div class="flex items-start gap-4">
+                                <div class="bg-secondary/10 p-3 rounded-xl">
+                                    <span class="material-symbols-outlined text-secondary">schedule</span>
+                                </div>
+                                <div>
+                                    <h3 class="font-headline font-bold text-on-surface text-xl">Operating Hours</h3>
+                                    <div class="grid grid-cols-2 gap-x-12 gap-y-2 mt-3 text-sm text-on-surface-variant">
+                                        <span class="font-bold">Mon - Thu</span>
+                                        <span>08:00 - 18:00</span>
+                                        <span class="font-bold">Fri - Sat</span>
+                                        <span>08:00 - 22:00</span>
+                                        <span class="font-bold">Sunday</span>
+                                        <span>09:00 - 14:00</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Stats / Social Box -->
+                    <div class="bg-primary p-8 rounded-2xl text-on-primary flex flex-col gap-6">
+                        <h4 class="font-headline text-xl font-bold">Get In Touch.</h4>
+                        <div class="flex flex-col gap-4">
+                            <div class="flex items-center gap-4">
+                                <span class="material-symbols-outlined">person</span>
+                                <span class="font-body text-sm">Jenny Procter Cooper (Club Secretary)</span>
+                            </div>
+                            <div class="flex items-center gap-4">
+                                <span class="material-symbols-outlined">alternate_email</span>
+                                <span class="font-body text-sm">info@gillittsbowls.co.za</span>
+                            </div>
+                            <div class="flex items-center gap-4">
+                                <span class="material-symbols-outlined">call</span>
+                                <span class="font-body text-sm">Contact Jenny for Details</span>
+                            </div>
+                        </div>
+                        <div class="pt-6 border-t border-on-primary/10">
+                            <span class="font-label text-xs uppercase tracking-widest opacity-60">Follow our social feed</span>
+                            <div class="flex gap-4 mt-4">
+                                <button class="bg-on-primary/10 hover:bg-on-primary/20 p-2 rounded-lg transition-colors">
+                                    <span class="material-symbols-outlined">share</span>
+                                </button>
+                                <button class="bg-on-primary/10 hover:bg-on-primary/20 p-2 rounded-lg transition-colors">
+                                    <span class="material-symbols-outlined">public</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- Footer -->
+    <footer class="bg-surface-container-low dark:bg-surface-container-dark-low w-full border-t border-outline-variant/15 py-12 px-8">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-7xl mx-auto font-plus-jakarta text-sm leading-relaxed text-green-900 dark:text-green-50">
+            <div class="flex flex-col gap-4">
+                <div class="font-lexend font-bold text-lg text-green-800">Gillitts Bowls Club</div>
+                <p class="text-on-surface-variant max-w-xs">Pioneering the future of social sports in the heart of Winston Park's mist-belt.</p>
+            </div>
+            <div class="flex flex-col gap-4">
+                <span class="font-lexend font-bold text-primary uppercase tracking-widest text-xs">Navigation</span>
+                <div class="flex flex-col gap-2">
+                    <a class="text-on-surface-variant hover:text-primary underline-offset-4 hover:underline transition-all opacity-80 hover:opacity-100" href="index.html">Home</a>
+                    <a class="text-on-surface-variant hover:text-primary underline-offset-4 hover:underline transition-all opacity-80 hover:opacity-100" href="gallery.html">Gallery</a>
+                    <a class="text-on-surface-variant hover:text-primary underline-offset-4 hover:underline transition-all opacity-80 hover:opacity-100" href="news.html">News</a>
+                    <a class="text-primary font-semibold underline-offset-4 hover:underline transition-all" href="contact.html">Contact</a>
+                </div>
+            </div>
+            <div class="flex flex-col gap-4">
+                <span class="font-lexend font-bold text-primary uppercase tracking-widest text-xs">Connect</span>
+                <div class="flex gap-4">
+                    <span class="material-symbols-outlined text-primary cursor-pointer hover:scale-110 transition-transform">share</span>
+                    <span class="material-symbols-outlined text-primary cursor-pointer hover:scale-110 transition-transform">mail</span>
+                    <span class="material-symbols-outlined text-primary cursor-pointer hover:scale-110 transition-transform">location_on</span>
+                </div>
+                <div class="mt-4 pt-4 border-t border-outline-variant/15">
+                    <p class="text-on-surface-variant/70 text-xs">© 2024 Gillitts Bowls Club. Winston Park, KwaZulu-Natal.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

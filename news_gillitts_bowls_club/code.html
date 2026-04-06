@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&amp;family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-tertiary": "#d4f9ff",
+                    "surface-container": "#e2ebda",
+                    "surface-container-highest": "#d6e0cd",
+                    "on-secondary-fixed-variant": "#246830",
+                    "surface-container-lowest": "#ffffff",
+                    "outline-variant": "#a8afa2",
+                    "on-tertiary-fixed": "#003d43",
+                    "tertiary": "#00656f",
+                    "tertiary-fixed-dim": "#00dbee",
+                    "surface-container-high": "#dce6d4",
+                    "on-tertiary-fixed-variant": "#005c64",
+                    "on-primary": "#d1ffc8",
+                    "primary-fixed-dim": "#90e28a",
+                    "secondary-fixed-dim": "#9ee59f",
+                    "on-primary-container": "#005c15",
+                    "on-surface": "#2a3127",
+                    "error": "#b02500",
+                    "primary-container": "#9df197",
+                    "surface-bright": "#f2f9ea",
+                    "background": "#f2f9ea",
+                    "on-background": "#2a3127",
+                    "inverse-primary": "#9df197",
+                    "on-primary-fixed-variant": "#12661e",
+                    "on-error-container": "#520c00",
+                    "outline": "#72796d",
+                    "surface-container-low": "#ebf3e3",
+                    "on-secondary-fixed": "#004a18",
+                    "surface-variant": "#d6e0cd",
+                    "primary-dim": "#025d16",
+                    "secondary-container": "#abf4ac",
+                    "on-primary-fixed": "#00460e",
+                    "secondary-dim": "#165c25",
+                    "inverse-on-surface": "#989f92",
+                    "tertiary-fixed": "#10eafe",
+                    "on-secondary": "#cfffcc",
+                    "inverse-surface": "#0a1008",
+                    "primary-fixed": "#9df197",
+                    "primary": "#176a21",
+                    "surface-tint": "#176a21",
+                    "on-error": "#ffefec",
+                    "error-container": "#f95630",
+                    "secondary-fixed": "#abf4ac",
+                    "error-dim": "#b92902",
+                    "surface-dim": "#ccd8c4",
+                    "tertiary-dim": "#005861",
+                    "on-secondary-container": "#185e27",
+                    "secondary": "#246830",
+                    "on-surface-variant": "#575e52",
+                    "tertiary-container": "#10eafe",
+                    "on-tertiary-container": "#005159",
+                    "surface": "#f2f9ea"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Lexend"],
+                    "body": ["Plus Jakarta Sans"],
+                    "label": ["Lexend"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+        .font-lexend { font-family: 'Lexend', sans-serif; }
+        .font-plus-jakarta { font-family: 'Plus Jakarta Sans', sans-serif; }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background antialiased selection:bg-primary/20 selection:text-primary">
+<!-- Top Navigation -->
+<nav class="docked full-width top-0 sticky z-50 bg-surface/70 backdrop-blur-xl shadow-sm shadow-green-900/5 transition-all duration-300">
+<div class="flex justify-between items-center max-w-7xl mx-auto px-6 h-20 w-full">
+<div class="font-lexend font-black text-green-900 dark:text-green-50 tracking-tighter text-2xl">
+                Gillitts Bowls Club
+            </div>
+<div class="hidden md:flex items-center gap-8 font-lexend font-bold tracking-tight">
+<a class="text-on-surface-variant hover:text-primary transition-colors hover:scale-105" href="#">Home</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors hover:scale-105" href="#">Gallery</a>
+<a class="text-green-700 dark:text-green-400 border-b-2 border-green-700 dark:border-green-400 pb-1 hover:scale-105" href="#">News</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors hover:scale-105" href="#">Contact</a>
+</div>
+<div class="flex items-center gap-4">
+<button class="hidden lg:flex font-lexend font-bold text-green-800 px-4 py-2 hover:bg-surface-container-high rounded-xl transition-all scale-95 active:duration-75">Visit Us</button>
+<button class="bg-primary text-on-primary font-lexend font-bold px-6 py-2.5 rounded-xl hover:scale-105 hover:bg-primary-dim transition-all duration-300 shadow-lg shadow-primary/10">Join Us</button>
+</div>
+</div>
+</nav>
+<main class="max-w-7xl mx-auto px-6 py-12">
+<!-- Header -->
+<header class="mb-16">
+<h1 class="font-headline font-black text-5xl md:text-7xl text-on-surface tracking-tighter mb-4">
+                Latest from the Green.
+            </h1>
+<div class="h-1.5 w-24 bg-primary rounded-full"></div>
+</header>
+<!-- Featured Story: Bento-style Asymmetric Layout -->
+<section class="mb-24">
+<div class="relative group overflow-hidden rounded-3xl bg-surface-container-low shadow-xl shadow-on-surface/5 flex flex-col lg:flex-row">
+<div class="lg:w-2/3 h-[400px] lg:h-auto overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out" data-alt="Wide angle view of pristine green bowling lawns at sunrise with golden mist floating over the Winston Park landscape" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD8uaJ666lzGgn2hgFxk4yTbQ4siv5VPl2w45HsSjLrIxjktQHN3hduOQkG1Qgrapz69UF698JMQDaAW1oiX9vzwEJ0pNeJpGTT5DA1TlrCw1_p-oaBDJkvF-z_yBQ6zMBrvHMU9AkJgDp5eBxgk82Y0RhiluoQ78ZEV3Q1wh4-7y7FDMae4XNV62uE6qMM9sMNfDGWdGjs49okRlVMj20lq_0lQIotWb3gw0VHsY3phNIc_F3pgf-iR0Drpks3yCH5tGqte5uAYj8"/>
+<div class="absolute inset-0 bg-gradient-to-r from-primary/40 to-transparent lg:hidden"></div>
+</div>
+<div class="lg:w-1/3 p-8 lg:p-12 flex flex-col justify-center bg-surface-container-lowest">
+<span class="font-label uppercase tracking-widest text-primary font-bold text-xs mb-4 flex items-center gap-2">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span> Featured News
+                    </span>
+<h2 class="font-headline font-extrabold text-3xl lg:text-4xl text-on-surface leading-tight mb-6">
+                        Gillitts to Host 2026 SA Women's Nationals
+                    </h2>
+<p class="font-body text-on-surface-variant leading-relaxed mb-8">
+                        The pinnacle of South African bowls is coming to Winston Park. Our world-class facilities have been selected for the prestigious 2026 national championships.
+                    </p>
+<div>
+<button class="bg-primary text-on-primary font-lexend font-bold px-8 py-3 rounded-xl hover:scale-105 transition-all shadow-md">Read Full Story</button>
+</div>
+</div>
+</div>
+</section>
+<!-- News Feed: Masonry/Asymmetric Grid -->
+<section class="mb-24">
+<div class="flex items-center justify-between mb-12">
+<h3 class="font-headline font-bold text-3xl text-on-surface">Club Updates</h3>
+<div class="hidden md:flex gap-2">
+<span class="px-4 py-2 rounded-full bg-primary text-on-primary font-label text-xs font-bold">All</span>
+<span class="px-4 py-2 rounded-full bg-surface-container-high text-on-surface-variant font-label text-xs font-bold hover:bg-tertiary-container transition-colors cursor-pointer">Tournament</span>
+<span class="px-4 py-2 rounded-full bg-surface-container-high text-on-surface-variant font-label text-xs font-bold hover:bg-tertiary-container transition-colors cursor-pointer">Social</span>
+<span class="px-4 py-2 rounded-full bg-surface-container-high text-on-surface-variant font-label text-xs font-bold hover:bg-tertiary-container transition-colors cursor-pointer">Maintenance</span>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-8">
+<!-- Card 1: B20 Results -->
+<div class="md:col-span-7 bg-surface-container-lowest p-8 rounded-3xl shadow-sm border border-outline-variant/10 flex flex-col justify-between hover:shadow-md transition-shadow">
+<div>
+<div class="flex justify-between items-start mb-6">
+<span class="bg-tertiary-container text-on-tertiary-container px-3 py-1 rounded-lg font-label text-[10px] font-black uppercase">B20 Tournament</span>
+<span class="text-on-surface-variant font-body text-sm italic">24 Oct 2024</span>
+</div>
+<h4 class="font-headline font-bold text-2xl text-on-surface mb-4">Summer Sizzler B20 Results</h4>
+<p class="font-body text-on-surface-variant mb-6">The High-Octane tournament delivered down to the last bowl. Congratulations to the Winston Park Wanderers for clinching the final end.</p>
+</div>
+<div class="flex items-center gap-4 text-primary font-lexend font-bold text-sm cursor-pointer hover:translate-x-2 transition-transform">
+                        View Full Scorecard <span class="material-symbols-outlined">arrow_forward</span>
+</div>
+</div>
+<!-- Card 2: Maintenance Notice -->
+<div class="md:col-span-5 bg-secondary-container/30 p-8 rounded-3xl border border-secondary-container flex flex-col">
+<span class="material-symbols-outlined text-secondary-dim text-4xl mb-4" style="font-variation-settings: 'FILL' 1;">construction</span>
+<h4 class="font-headline font-bold text-xl text-on-secondary-container mb-2">Club Maintenance Notice</h4>
+<p class="font-body text-on-secondary-container/80 text-sm mb-6">Green A will be closed for light scarification from Tuesday to Friday. Thank you for your cooperation in maintaining our premium surfaces.</p>
+<div class="mt-auto font-label text-xs font-bold text-secondary-dim">EST. COMPLETION: OCT 30</div>
+</div>
+<!-- Card 3: Social Event -->
+<div class="md:col-span-4 h-full relative overflow-hidden rounded-3xl group min-h-[350px]">
+<img class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Social gathering at a modern club bar with warm ambient lighting and people laughing over drinks" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDNqd2fs2YQZyqut6TUQjlk2XTPhIsEdMB5QEhoXE1Pzo3BusYMuowlfb7AjXrbwJtVeDa7u1zb1fKcOUFzBYLSiyCWbtsar1vrgPlAu1iDotsuxg-405REO6Mvu-KKw5aX-Nzev-AyMoqjJh7hfTMrV3L46Cybfr8vTpBsvgIKoI-fpq-AezoNrU_StjsLU1kpdSVKX4asz-FYeEvQcCxKE6jIhLUArMjcmV2Dc_IsBw2Fj-5ZvIekefQlxG1SuK4Xsmhd76lw5NQ"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent p-8 flex flex-col justify-end">
+<span class="bg-white/20 backdrop-blur-md text-white border border-white/30 px-3 py-1 rounded-lg font-label text-[10px] font-bold uppercase w-fit mb-4">Social</span>
+<h4 class="font-headline font-bold text-2xl text-white mb-2">Friday Twilight Braai</h4>
+<p class="font-body text-white/80 text-sm">Join us for the monthly community evening. Family friendly, meat packs available at the bar.</p>
+</div>
+</div>
+<!-- Card 4: Detailed News Item -->
+<div class="md:col-span-8 bg-surface-container-low p-8 rounded-3xl flex flex-col lg:flex-row gap-8 items-center">
+<div class="lg:w-1/2">
+<img class="rounded-2xl w-full h-64 object-cover" data-alt="Close up of a professional lawn bowl on a perfectly manicured green lawn with soft morning dew" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA9Thbq0NprBBStI1QtLuoJlxB7dJuD2IZxLWck4_q-wYQ_QvBJCgwHuDiDkckPCdgkhflskVoru8V8WxzC1d_uq-P42OObUvtuDVNiijEEVTLFhZgjafsgqkD_hgf79pMQwZJEXfZj2CcT9QnQEmukkSVAOo0JHq8_dcGzD5qCok6xUoKLbcxLS5BGvePWL79ra_D6uR8atjkQu-5iIFe3k87Jjw4Me8S5xg99Qn6O2Fz7Cm4-KxIoyC1pXPZ4Bu6LEEzJVEo7sfI"/>
+</div>
+<div class="lg:w-1/2">
+<span class="text-primary font-label text-[10px] font-bold uppercase mb-2 block">Coaching Clinic</span>
+<h4 class="font-headline font-bold text-2xl text-on-surface mb-3">Next-Gen Bowling Academy</h4>
+<p class="font-body text-on-surface-variant text-sm mb-6">Our youth development program is expanding. Registrations now open for the U18 summer intensive sessions.</p>
+<button class="text-on-surface font-lexend font-black text-sm border-b-2 border-primary pb-1 hover:text-primary transition-colors">Sign Up Today</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Newsletter Signup: Glassmorphism / Atmospheric Section -->
+<section class="relative rounded-[3rem] overflow-hidden bg-primary py-20 px-8">
+<!-- Background Accent -->
+<div class="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-white/10 to-transparent pointer-events-none"></div>
+<div class="max-w-3xl mx-auto text-center relative z-10">
+<span class="material-symbols-outlined text-on-primary text-5xl mb-6" style="font-variation-settings: 'FILL' 1;">mail</span>
+<h2 class="font-headline font-black text-4xl md:text-5xl text-on-primary mb-4 leading-tight">Never miss a roll.</h2>
+<p class="font-body text-on-primary/80 text-lg mb-10 max-w-xl mx-auto">
+                    Get the latest B20 fixtures, social event invites, and club news delivered straight to your inbox. 
+                </p>
+<form class="flex flex-col sm:flex-row gap-4 max-w-lg mx-auto">
+<input class="flex-grow bg-white/10 border-0 backdrop-blur-md rounded-2xl px-6 py-4 text-on-primary placeholder:text-on-primary/50 focus:ring-2 focus:ring-on-primary/30 transition-all outline-none" placeholder="Enter your email" type="email"/>
+<button class="bg-surface-container-lowest text-primary font-lexend font-bold px-8 py-4 rounded-2xl hover:scale-105 active:scale-95 transition-all" type="submit">
+                        Subscribe
+                    </button>
+</form>
+<p class="mt-6 text-on-primary/60 text-xs font-label">
+                    No spam. Just the good stuff. Unsubscribe any time.
+                </p>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full border-t border-outline-variant/15 bg-surface-container-low dark:bg-surface-container-dark-low mt-20">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8 py-12 px-8 max-w-7xl mx-auto">
+<div class="flex flex-col gap-4">
+<div class="font-lexend font-bold text-lg text-green-800">Gillitts Bowls Club</div>
+<p class="font-plus-jakarta text-sm leading-relaxed text-on-surface-variant max-w-xs">
+                    The premier destination for professional B20 Cricket Bowls and social sporting excellence in Winston Park.
+                </p>
+</div>
+<div class="flex flex-col gap-4">
+<div class="font-lexend font-bold text-sm uppercase tracking-widest text-primary">Explore</div>
+<div class="flex flex-col gap-2">
+<a class="text-on-surface-variant hover:text-primary transition-all font-plus-jakarta text-sm underline-offset-4 hover:underline" href="#">Home</a>
+<a class="text-on-surface-variant hover:text-primary transition-all font-plus-jakarta text-sm underline-offset-4 hover:underline" href="#">Gallery</a>
+<a class="text-primary font-semibold font-plus-jakarta text-sm" href="#">News</a>
+<a class="text-on-surface-variant hover:text-primary transition-all font-plus-jakarta text-sm underline-offset-4 hover:underline" href="#">Contact</a>
+</div>
+</div>
+<div class="flex flex-col gap-4">
+<div class="font-lexend font-bold text-sm uppercase tracking-widest text-primary">Contact</div>
+<div class="font-plus-jakarta text-sm text-on-surface-variant">
+                    Winston Park, KwaZulu-Natal<br/>
+                    South Africa
+                </div>
+<div class="flex gap-4 mt-2">
+<span class="material-symbols-outlined text-primary hover:scale-110 transition-transform cursor-pointer">social_leaderboard</span>
+<span class="material-symbols-outlined text-primary hover:scale-110 transition-transform cursor-pointer">share</span>
+</div>
+</div>
+</div>
+<div class="max-w-7xl mx-auto px-8 py-6 border-t border-outline-variant/10 text-center md:text-left">
+<p class="font-plus-jakarta text-xs text-on-surface-variant">
+                © 2024 Gillitts Bowls Club. Winston Park, KwaZulu-Natal. <span class="mx-2">|</span> <a class="hover:text-primary transition-colors" href="#">Privacy Policy</a>
+</p>
+</div>
+</footer>
+</body></html>

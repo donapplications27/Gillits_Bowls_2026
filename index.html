@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html class="light" lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Home | Gillitts Bowls Club</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&amp;family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&amp;display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script id="tailwind-config">
+          tailwind.config = {
+            darkMode: "class",
+            theme: {
+              extend: {
+                "colors": {
+                        "on-tertiary": "#d4f9ff",
+                        "surface-container": "#e2ebda",
+                        "surface-container-highest": "#d6e0cd",
+                        "on-secondary-fixed-variant": "#246830",
+                        "surface-container-lowest": "#ffffff",
+                        "outline-variant": "#a8afa2",
+                        "on-tertiary-fixed": "#003d43",
+                        "tertiary": "#00656f",
+                        "tertiary-fixed-dim": "#00dbee",
+                        "surface-container-high": "#dce6d4",
+                        "on-tertiary-fixed-variant": "#005c64",
+                        "on-primary": "#d1ffc8",
+                        "primary-fixed-dim": "#90e28a",
+                        "secondary-fixed-dim": "#9ee59f",
+                        "on-primary-container": "#005c15",
+                        "on-surface": "#2a3127",
+                        "error": "#b02500",
+                        "primary-container": "#9df197",
+                        "surface-bright": "#f2f9ea",
+                        "background": "#f2f9ea",
+                        "on-background": "#2a3127",
+                        "inverse-primary": "#9df197",
+                        "on-primary-fixed-variant": "#12661e",
+                        "on-error-container": "#520c00",
+                        "outline": "#72796d",
+                        "surface-container-low": "#ebf3e3",
+                        "on-secondary-fixed": "#004a18",
+                        "surface-variant": "#d6e0cd",
+                        "primary-dim": "#025d16",
+                        "secondary-container": "#abf4ac",
+                        "on-primary-fixed": "#00460e",
+                        "secondary-dim": "#165c25",
+                        "inverse-on-surface": "#989f92",
+                        "tertiary-fixed": "#10eafe",
+                        "on-secondary": "#cfffcc",
+                        "inverse-surface": "#0a1008",
+                        "primary-fixed": "#9df197",
+                        "primary": "#176a21",
+                        "surface-tint": "#176a21",
+                        "on-error": "#ffefec",
+                        "error-container": "#f95630",
+                        "secondary-fixed": "#abf4ac",
+                        "error-dim": "#b92902",
+                        "surface-dim": "#ccd8c4",
+                        "tertiary-dim": "#005861",
+                        "on-secondary-container": "#185e27",
+                        "secondary": "#246830",
+                        "on-surface-variant": "#575e52",
+                        "tertiary-container": "#10eafe",
+                        "on-tertiary-container": "#005159",
+                        "surface": "#f2f9ea"
+                },
+                "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                },
+                "fontFamily": {
+                        "headline": ["Lexend"],
+                        "body": ["Plus Jakarta Sans"],
+                        "label": ["Lexend"]
+                }
+              },
+            },
+          }
+        </script>
+    <style>
+            .material-symbols-outlined {
+                font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            }
+            .bg-hero-overlay {
+                background: linear-gradient(to right, rgba(10, 16, 8, 0.85) 0%, rgba(10, 16, 8, 0.4) 50%, rgba(10, 16, 8, 0.1) 100%);
+            }
+            .parallax-section {
+                background-attachment: fixed;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+        </style>
+</head>
+<body class="bg-background text-on-surface font-body selection:bg-primary-container selection:text-on-primary-container">
+    <!-- TopNavBar -->
+    <nav class="docked full-width top-0 sticky z-50 bg-surface/70 dark:bg-surface-dark/70 backdrop-blur-xl shadow-sm shadow-green-900/5 transition-all duration-300">
+        <div class="flex justify-between items-center max-w-7xl mx-auto px-6 h-20 w-full">
+            <div class="font-lexend font-black text-green-900 dark:text-green-50 tracking-tighter text-2xl">
+                Gillitts Bowls Club
+            </div>
+            <div class="hidden md:flex items-center gap-8 font-lexend font-bold tracking-tight">
+                <a class="text-green-700 dark:text-green-400 border-b-2 border-green-700 dark:border-green-400 pb-1 hover:scale-105 hover:bg-surface-container-high transition-all duration-300" href="index.html">Home</a>
+                <a class="text-on-surface-variant hover:text-primary transition-colors hover:scale-105 hover:bg-surface-container-high transition-all duration-300" href="gallery.html">Gallery</a>
+                <a class="text-on-surface-variant hover:text-primary transition-colors hover:scale-105 hover:bg-surface-container-high transition-all duration-300" href="news.html">News</a>
+                <a class="text-on-surface-variant hover:text-primary transition-colors hover:scale-105 hover:bg-surface-container-high transition-all duration-300" href="contact.html">Contact</a>
+            </div>
+            <div class="flex items-center gap-4">
+                <button class="hidden lg:block px-5 py-2 rounded-full font-label text-sm uppercase tracking-wider text-primary border border-primary/20 hover:bg-primary-container transition-all active:scale-95" onclick="location.href='contact.html'">Visit Us</button>
+                <button class="px-6 py-2.5 bg-primary text-on-primary rounded-xl font-label text-sm uppercase tracking-widest shadow-lg shadow-primary/20 hover:scale-105 transition-all active:scale-95" onclick="location.href='contact.html'">Join Us</button>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <!-- Hero Section -->
+        <section class="relative h-[85vh] min-h-[700px] flex items-center overflow-hidden parallax-section" data-alt="A group of diverse, happy people enjoying a social game of lawn bowls on a lush, sun-drenched green at Gillitts Bowls Club, capturing a sense of community and fun." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDL5lZB_ofmYBTeJKNRRHRLoEqJa4UUJVa5ROA7P9rm2OQfIK98m-aMLY52Gm5MAF3_nTOIz0faVUetW_3eb06yTt8B0z_n4NwyX3DodjidXvWdTQfwP5wKJFzbO6if8iGebJOUD34sJud9vxVYLidd6JYbX0iyczVWWfJ5LmEIxR7q2yM6g7m7fZFou8e6oYd5116HcuOe9HFAhy-soJz4a8F9Jf0-Ybutze1JzyoDt080N1DEUZJfy49iPz9fLJxCeigVnY6biAU')">
+            <div class="absolute inset-0 bg-hero-overlay"></div>
+            <div class="relative max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+                <div class="text-white drop-shadow-lg">
+                    <span class="inline-block py-1 px-3 bg-primary-fixed text-on-primary-fixed rounded-full font-label text-[10px] tracking-[0.2em] mb-6 uppercase font-bold">Winston Park Premier Destination</span>
+                    <h1 class="font-headline font-black text-5xl md:text-7xl tracking-tighter leading-[0.95] mb-6">
+                        Pioneers of the <span class="text-primary-fixed">B20 Format</span>.
+                    </h1>
+                    <p class="font-body text-lg md:text-xl text-white/90 max-w-lg mb-10 leading-relaxed">
+                        The heart of Winston Park’s Mist-Belt. Precision, passion, and prestige in every bowl since 1953.
+                    </p>
+                    <div class="flex flex-wrap gap-4">
+                        <button class="px-8 py-4 bg-primary-fixed text-on-primary-fixed rounded-xl font-headline font-bold text-lg hover:scale-105 transition-all shadow-xl shadow-black/20" onclick="location.href='contact.html'">Join the Club</button>
+                        <button class="px-8 py-4 bg-white/10 backdrop-blur-md border border-white/30 text-white rounded-xl font-headline font-bold text-lg hover:bg-white/20 transition-all">Book a Green</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Bottom Glass Scroll Indicator -->
+            <div class="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 opacity-70">
+                <span class="font-label text-[10px] text-white uppercase tracking-widest font-bold">Explore</span>
+                <div class="w-px h-12 bg-gradient-to-b from-white to-transparent"></div>
+            </div>
+        </section>
+        <!-- Excellence Section (Bento Grid) -->
+        <section class="py-24 px-6 bg-surface">
+            <div class="max-w-7xl mx-auto">
+                <div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-8">
+                    <div class="max-w-2xl">
+                        <h2 class="font-headline font-black text-4xl md:text-5xl text-primary leading-tight tracking-tight mb-4">Our Excellence</h2>
+                        <p class="text-on-surface-variant text-lg">Where tradition meets modern sport innovation in the heart of KwaZulu-Natal.</p>
+                    </div>
+                    <div class="hidden md:block h-px flex-1 mx-12 bg-outline-variant/30"></div>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-12 gap-6">
+                    <!-- B20 Format Card -->
+                    <div class="md:col-span-8 group relative overflow-hidden rounded-xl aspect-[16/9] md:aspect-auto md:h-[450px] bg-surface-container-lowest shadow-sm hover:shadow-xl transition-all duration-500">
+                        <div class="absolute inset-0 z-10 p-10 flex flex-col justify-end bg-gradient-to-t from-secondary/80 to-transparent">
+                            <span class="font-label text-[10px] text-primary-container mb-2 uppercase tracking-[0.3em]">Game Innovation</span>
+                            <h3 class="font-headline font-bold text-3xl text-white mb-4">B20 "Cricket-Bowls"</h3>
+                            <p class="text-white/80 max-w-md leading-relaxed">Fast-paced, tactical, and high-energy. Pioneered here in 2016 by Malcolm Webster and Andy van den Heuvel, B20 brings the thrill of limited-overs cricket to the green for a modern sporting experience.</p>
+                        </div>
+                        <img class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="dynamic action shot of a lawn bowl rolling across a perfect green with focus on the technical grip of the player" src="./generated_images/B20 Action.png"/>
+                    </div>
+                    <!-- Social Tabs-in Card -->
+                    <div class="md:col-span-4 flex flex-col gap-6">
+                        <div class="flex-1 bg-secondary-container/30 p-8 rounded-xl border border-secondary/10 flex flex-col justify-center">
+                            <div class="w-12 h-12 bg-secondary text-on-secondary rounded-full flex items-center justify-center mb-6">
+                                <span class="material-symbols-outlined">groups</span>
+                            </div>
+                            <h3 class="font-headline font-bold text-2xl text-secondary mb-3">Friday Sundowners</h3>
+                            <p class="text-on-surface-variant leading-relaxed">Join our inclusive weekly social days. Perfect for networking, making friends, and casual competition in the mist-belt.</p>
+                        </div>
+                        <div class="flex-1 bg-surface-container-low p-8 rounded-xl border border-outline-variant/10 flex flex-col justify-center">
+                            <div class="w-12 h-12 bg-primary text-on-primary rounded-full flex items-center justify-center mb-6">
+                                <span class="material-symbols-outlined">sports_score</span>
+                            </div>
+                            <h3 class="font-headline font-bold text-2xl text-primary mb-3">Expert Coaching</h3>
+                            <p class="text-on-surface-variant leading-relaxed">Refine your delivery with our provincial-level coaches. Available for all skill levels.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Mist-Belt Advantage (Asymmetrical Layout) -->
+        <section class="py-24 bg-surface-container-low overflow-hidden">
+            <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 items-center gap-16">
+                <div class="relative order-2 md:order-1">
+                    <div class="absolute -top-10 -left-10 w-64 h-64 bg-primary/5 rounded-full blur-3xl"></div>
+                    <div class="relative rounded-xl overflow-hidden shadow-2xl rotate-2 hover:rotate-0 transition-transform duration-500">
+                        <img class="w-full h-[500px] object-cover" data-alt="atmospheric landscape of misty rolling hills and lush green vegetation in Winston Park KwaZulu-Natal at dawn" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDhhqBR1yagFN9Wg-5PZq3-b_CFe1L4C5oSPRPiCxesbPeLcbX7XYMlMnCkuhWb5OlG9razbi4tj-jaNFUyEC9_46cdXLaYxVRSY0PeWJZo0PFiYUBtbbCyFl8L2pvNCorLTCm_Delc_coY6Hl_jBWo-3zyY0npWCWC9fdsakmOv5m6xqJ8rJMp4yYN_v0zhQOYGsqv3OX5-7E_PkJu4VSWq3bCu7auCVjsvhjcTwlrxSI47obuKr4MxqcyiC-T2K2kIw0RsYaV97g"/>
+                    </div>
+                    <div class="absolute -bottom-6 -right-6 bg-white p-8 rounded-xl shadow-xl max-w-[240px] -rotate-3">
+                        <span class="text-4xl font-headline font-black text-primary">Cooler</span>
+                        <p class="font-label text-[10px] tracking-widest text-on-surface-variant mt-2 uppercase">Intensive Play Environment</p>
+                    </div>
+                </div>
+                <div class="order-1 md:order-2">
+                    <h2 class="font-headline font-black text-5xl text-primary leading-none mb-8 tracking-tighter">
+                        The Mist-Belt Advantage.
+                    </h2>
+                    <div class="space-y-6 text-lg text-on-surface-variant leading-relaxed">
+                        <p>
+                            Winston Park's unique micro-climate provides a <span class="text-secondary font-bold">technical edge</span>. Our greens remain supple and vibrant, protected by the soft Atlantic-to-Indian mists.
+                        </p>
+                        <p>
+                            While other clubs swelter, Gillitts offers a refreshing, high-performance environment that allows for longer play sessions and sharper mental focus.
+                        </p>
+                        <ul class="space-y-4 pt-6">
+                            <li class="flex items-center gap-4">
+                                <span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                                <span class="font-headline font-bold text-on-surface">Optimal Temperature Control</span>
+                            </li>
+                            <li class="flex items-center gap-4">
+                                <span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                                <span class="font-headline font-bold text-on-surface">Superior Turf Resilience</span>
+                            </li>
+                            <li class="flex items-center gap-4">
+                                <span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                                <span class="font-headline font-bold text-on-surface">Enhanced Ball Friction Mechanics</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Legacy Section (2026 Nationals) -->
+        <section class="py-24 px-6 relative bg-primary-container/20">
+            <div class="max-w-7xl mx-auto rounded-[2rem] overflow-hidden bg-on-surface text-surface p-12 md:p-20 relative">
+                <div class="absolute top-0 right-0 w-1/2 h-full opacity-10 pointer-events-none">
+                    <img class="w-full h-full object-cover" data-alt="abstract pattern of polished bowling balls and wooden textures in high contrast dark green and white" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD3nvv5pAkMHSp7kzqJTSiDbYYyRoNYgImRPHgACe-eHSor78Kf5TW2M8vTinF14X0CjJLdGbMcglqT_ggvKocRgkoOY06Byc3fuCqTHbfDkt7TCf3TVe5c0WKq4bWfR-HKHPhF_L237bEs8XGspm_74eCCn1jeJ0X6-aIhwV81QAHDBl7wd7xHH9TD42fx8if2pgOAsg6UQ9IzLRUY3g6oEs97V0eHIoRQTgIIJmth8mXOEQOnCM3oKxhP-nuc0_W3jsKKpprmOkQ"/>
+                </div>
+                <div class="relative z-10 max-w-3xl">
+                    <span class="inline-block py-1 px-3 border border-primary-container/30 text-primary-fixed rounded-full font-label text-[10px] tracking-[0.2em] mb-8 uppercase">A Growing Legacy</span>
+                    <h2 class="font-headline font-black text-5xl md:text-6xl mb-8 leading-tight tracking-tighter">Become a Part of the <span class="text-primary-fixed">Legacy.</span></h2>
+                    <p class="text-surface-variant text-xl mb-12 leading-relaxed">
+                        We are proud to announce that Gillitts Bowls Club has been selected as a host venue for the <strong>2026 SA Women's Nationals</strong>. Join us as we prepare to welcome the nation's best to our greens.
+                    </p>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-10 mb-12">
+                        <div>
+                            <h4 class="font-headline font-bold text-xl mb-2 text-primary-fixed">Full Membership</h4>
+                            <p class="text-surface-variant/70 text-sm">Access to all greens, league participation, and voting rights in club governance.</p>
+                        </div>
+                        <div>
+                            <h4 class="font-headline font-bold text-xl mb-2 text-primary-fixed">Social Membership</h4>
+                            <p class="text-surface-variant/70 text-sm">Full access to clubhouse facilities and social tabs-in events.</p>
+                        </div>
+                    </div>
+                    <button class="w-full md:w-auto px-10 py-5 bg-primary text-on-primary rounded-xl font-headline font-bold text-xl hover:bg-primary-dim transition-all shadow-2xl shadow-primary/40" onclick="location.href='contact.html'">Inquire About Membership</button>
+                </div>
+            </div>
+        </section>
+        <!-- Image Gallery / Masonry Feel -->
+        <section class="pb-24 px-6 bg-surface">
+            <div class="max-w-7xl mx-auto">
+                <div class="columns-1 md:columns-3 gap-6 space-y-6">
+                    <img class="rounded-xl w-full shadow-md hover:scale-[1.02] transition-all" data-alt="close up of a professional bowling bowl with the Gillitts club insignia on a green lawn" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAEYH_xxacDfIFALFFwlChMPfczAbTG-GfCT4U7xTBZocicZpIxlCf_hKZ16qw1NFjPlgaGNQZY_SlCI5DQ-x4MWKNSFR86IEgJM1oc6HByt0WQAUtxB_e12AXSu7uznSBQYnu6By8nyF-yvdpG_q-ednjl_vWuDmumTpcQUO3OkWSr_GcKQiaKLvRF9PIGaC6DHEFXdJjut0vozKn4yqrwMaQTKBRzFbqCvHlwBolJM_WD4PU8oBTzH1DOlFUgBTHII7AORREC61k"/>
+                    <img class="rounded-xl w-full shadow-md hover:scale-[1.02] transition-all" data-alt="a happy senior woman laughing while playing bowls with her younger teammates" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBiD6oWHHF4M_yJd1z1JDJzMY0kKpAkv397L95LcQP360RReGZUo-Uw4N4BY-RR-sIZpFzxsHSYu6Lb8jyjvtvgVDbvAa749Nf7Pz_9lmg0aLz-pZG1I1Nbt36QAYkhIisKzsoPxj3DwFBpNTOCbdSX0QGYLHoHXybvY5zYGi3iI7RpbnwuWxRJjKTuKQANnXQ3MdL3KdI4F_t7-xSvR3beGF_qUR2JCqfDFlNSDVyJa9xcAW7-HyopcStpne8Vzi9f-th_zTgKkpQ"/>
+                    <img class="rounded-xl w-full shadow-md hover:scale-[1.02] transition-all" data-alt="architectural view of the modern Gillitts clubhouse with large glass windows overlooking the bowling greens" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCqrKzlwEKT3NENDg8IwvGUGc8zJjQhvNHLjXJkIFAtBRBeBwpZaL9ObFYuvDrIWwZUxtRjsIp6vFLGx0_d_d0Jf6kpMuXB7SaUf7RdNJz38xA_k6zfJb5nyYklkh4QkKaR_1njisQfLIHWn3Z4AQkFEj8IsIUDF51GOEKRZ7eqyx364UwdheT1IAYR3ERSAnt_s4qc_4A4rUkslJP_inQO9HLf2JH0BBXvPEacqLYSqbhE7PuOl6Xuy8bxJ9sYMuhg8-ENfaw9fcA"/>
+                    <img class="rounded-xl w-full shadow-md hover:scale-[1.02] transition-all" data-alt="young men in team sportswear focused during a high-stakes B20 tournament match" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAjIWdg-Kyb3zGkhpv0qyurMN3smEwXZBMr49paNuVIc5mMDyW9z9lauJnMKaDbAzy9gKesYg3Grba2uoGe42wY01IbM28C7picaG3QtvGqykWIr-9Z2RPxlVRpSN-_ePE43nmPl_roI90ui4fmbIGa40AqIe-l_EkWuFxaxYizcv0y7iOqdjgfaYFRcJnjEuhqTKVA1OqGebjIwpLVjJRcEnCsobvaIS2oj67eEYa0xNfw4kbj-JMfjSt_asbXV8VJmCgv5vIPF9E"/>
+                    <img class="rounded-xl w-full shadow-md hover:scale-[1.02] transition-all" data-alt="evening view of the bowling greens under floodlights with a soft mist rolling in" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC36GwqdUWRTaXoZ4DL_xE6tnUq4LvFvURuF8PM8EcpUNBh7KsVbmCg3Q5Na4pBMDhywvR13HFdb6bozPod8NlqhhhqAyg6lSrWfP7wHWe7wvFbpPNlguHPHWqxFnsi-FHaL2M7IFAPCfDn4WKMyNeol9XxVVe-ORKhpdCOIW-HdnWDOesvYvjnCA2qwr3hf8D3yN-8bqIGzd4hZZaz260cEv5HaeW81JoM9VGS4bbqn-VNkLVe2kJjilw3H4MM404BlmnBA7tw7KI"/>
+                    <img class="rounded-xl w-full shadow-md hover:scale-[1.02] transition-all" data-alt="vibrant community gathering on the clubhouse deck with drinks and food during a social tournament" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDYUScXWnk7vPzPsa9ybT0W35TEyM35ZyK6LeNgir0T58-YUBq61sXNMgTCfhU9qGiWaBe_Iy7B0WeMbkg1Oqa_hbp77wvcrUJ5GI_irMQ5u-175eloE19IdsxWZnDr-4-HTHxLc1vhctUAuSSDmehUo6gs5GKkTN5kdxEkM-mS83LSeoL2qX3aM4C_8G6VDt386MmFCw7ldPlk8ofMweAzjudNarDwX-gogx2OzDLuCJEiKnlM5ddTs962E9tQ5q5XYTfIbV5uAe0"/>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Footer -->
+    <footer class="w-full border-t border-outline-variant/15 bg-surface-container-low dark:bg-surface-container-dark-low">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 py-12 px-8 max-w-7xl mx-auto font-plus-jakarta text-sm leading-relaxed text-green-900 dark:text-green-50">
+            <div>
+                <div class="font-lexend font-bold text-lg text-green-800 mb-6 flex items-center gap-2">
+                    <span class="material-symbols-outlined text-primary">eco</span> <!-- Plane tree leaf nod -->
+                    Gillitts Bowls Club
+                </div>
+                <p class="text-on-surface-variant max-w-xs">The premier social and sporting hub in Winston Park. Home of the B20 format and the iconic Plane Tree crest.</p>
+                <div class="flex gap-4 mt-8">
+                    <a class="w-10 h-10 rounded-full border border-outline flex items-center justify-center hover:bg-primary-container transition-all" href="#"><span class="material-symbols-outlined text-lg">social_leaderboard</span></a>
+                    <a class="w-10 h-10 rounded-full border border-outline flex items-center justify-center hover:bg-primary-container transition-all" href="#"><span class="material-symbols-outlined text-lg">share</span></a>
+                </div>
+            </div>
+            <div class="grid grid-cols-2 gap-4">
+                <div class="space-y-4">
+                    <h4 class="font-lexend font-bold text-on-surface uppercase text-xs tracking-widest">Navigation</h4>
+                    <ul class="space-y-2">
+                        <li><a class="text-on-surface-variant hover:text-primary transition-all underline-offset-4 hover:underline" href="index.html">Home</a></li>
+                        <li><a class="text-on-surface-variant hover:text-primary transition-all underline-offset-4 hover:underline" href="gallery.html">Gallery</a></li>
+                        <li><a class="text-on-surface-variant hover:text-primary transition-all underline-offset-4 hover:underline" href="news.html">News</a></li>
+                    </ul>
+                </div>
+                <div class="space-y-4">
+                    <h4 class="font-lexend font-bold text-on-surface uppercase text-xs tracking-widest">Legal</h4>
+                    <ul class="space-y-2">
+                        <li><a class="text-on-surface-variant hover:text-primary transition-all underline-offset-4 hover:underline" href="contact.html">Contact</a></li>
+                        <li><a class="text-on-surface-variant hover:text-primary transition-all underline-offset-4 hover:underline" href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="space-y-6">
+                <h4 class="font-lexend font-bold text-on-surface uppercase text-xs tracking-widest">Winston Park HQ</h4>
+                <div class="flex items-start gap-3 text-on-surface-variant">
+                    <span class="material-symbols-outlined text-primary">location_on</span>
+                    <p>12 Jan Smuts Avenue, Winston Park,<br/>Gillitts, 3610, South Africa</p>
+                </div>
+                <div class="flex items-start gap-3 text-on-surface-variant">
+                    <span class="material-symbols-outlined text-primary">phone_in_talk</span>
+                    <p>+27 31 767 1234</p>
+                </div>
+            </div>
+        </div>
+        <div class="py-8 border-t border-outline-variant/10 text-center text-xs text-on-surface-variant/60 font-label tracking-wide uppercase">
+            © 2024 Gillitts Bowls Club. Winston Park, KwaZulu-Natal.
+        </div>
+    </footer>
+</body>
+</html>
